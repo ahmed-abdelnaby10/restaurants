@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function CheckPassword() {
     return (
-        <div className='bg-FB flex flex-col items-start gap-5 px-5 pt-20 h-800'>
+        <div className='bg-FB flex flex-col items-start gap-5 px-5 pt-20 h-screen'>
             <div className='text-0D font-semibold text-base flex items-center justify-center relative w-full'>
                 <Link to="/sign-in" className='text-black absolute left-0'><FaArrowLeft/></Link>
                 <h2 className=''>Forgot password</h2>

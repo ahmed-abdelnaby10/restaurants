@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import Swal from 'sweetalert2'
-
 
 export const cartSlice = createSlice({
     initialState: [],
@@ -10,10 +8,7 @@ export const cartSlice = createSlice({
             const repeatedProduct = state.find((product)=>product.id === action.payload.id)
             const clonedProduct = {...action.payload}
             if (repeatedProduct) {
-                Swal.fire({
-                    title: "This Product Already Added to Cart!",
-                    confirmButtonText: "OK",
-                })
+                return false
             }else {
                 state.push(clonedProduct)
             }
