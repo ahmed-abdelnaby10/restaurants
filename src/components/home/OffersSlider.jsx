@@ -6,7 +6,7 @@ const indicators = () => (<div className="indicator offer-ind"></div>);
 
 export default function OffersSlider() {
     return (
-        <div className='slide-container w-full px-5 pt-2.5 pb-8 bg-white'>
+        <div className='slide-container w-full px-5 bg-whi'>
             <h1 className='text-xl font-bold text-main mb-2.5'>Best deals</h1>
             <Slide
                 infinite={true}

@@ -1,5 +1,5 @@
 import { FaArrowLeft } from "react-icons/fa6";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Footer from "../Footer"
 
 export default function LocationDetails() {
@@ -12,7 +12,7 @@ export default function LocationDetails() {
       </div>
       <div className="w-full h-96">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492699.436727936!2d34.48157279321273!3d31.252871858119626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15006f476664de99%3A0x8d285b0751264e99!2sJordan!5e0!3m2!1sen!2seg!4v1707828087584!5m2!1sen!2seg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54837.47704693497!2d30.95815680240809!3d30.793033285836835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c95daafcf035%3A0x7421820c5e8cae42!2sTanta%2C%20Tanta%20Qism%202%2C%20Tanta%2C%20Gharbia%20Governorate!5e0!3m2!1sen!2seg!4v1708349390797!5m2!1sen!2seg"
           className="w-full h-full"
           title="locate"
           style={{ border: 0 }}

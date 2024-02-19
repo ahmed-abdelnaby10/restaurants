@@ -11,7 +11,8 @@ const foodAmountSlice = createSlice({
       food.title = action.payload.title;
       food.price = action.payload.price;
       food.descr = action.payload.descr;
-      food.quan = action.payload.quan;
+      food.quan = action.payload.q;
+      food.image = action.payload.image
       if (repeatedFood) {
           Swal.fire({
               title: "This Product Already Added to Cart!",

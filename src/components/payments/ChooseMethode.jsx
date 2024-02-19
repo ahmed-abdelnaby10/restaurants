@@ -4,10 +4,11 @@ import paypal from "../../assests/payment/paypal.png"
 import master from "../../assests/payment/master.png"
 import visa from "../../assests/payment/visa.png"
 import gpay from "../../assests/payment/gpay.png"
+import Footer from "../Footer"
 
 export default function ChooseMethode() {
     return (
-        <div className="pt-20 flex flex-col items-start px-5">
+        <div className="pt-5 min-h-screen flex flex-col items-start px-5">
             <Link to="/home/orders"><FaAngleLeft className="text-xl text-main"/></Link>
             <h1 className="text-0D text-2xl font-bold mt-7 mb-10">
                 You are almost <br /> there...<span className="text-txt-red">Choose</span> your <br /> payment method
@@ -34,6 +35,7 @@ export default function ChooseMethode() {
                     <FaAngleRight className="text-xl text-main"/>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

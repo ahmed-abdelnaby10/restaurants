@@ -4,11 +4,12 @@ import { useState } from "react";
 import FeaturedHotels from "./FeaturedHotels";
 import Food from "./Food";
 import PopularHotels from "./PopularHotels";
+import Footer from "../Footer"
 
 export default function Home() {
     const [offer, setOffer] = useState(false)
     return (
-        <div className='bg-FB flex flex-col items-start gap-5 pt-20 tab:pb-20 pb-10'>
+        <div className='bg-FB flex flex-col items-start gap-5 min-h-screen pt-5 pb-24'>
             <div className="w-full flex items-center justify-between px-5">
                 <div className="flex flex-col items-start gap-2">
                     <p className="text-sm text-txt-red font-medium">Deliver to</p>
@@ -31,6 +32,7 @@ export default function Home() {
             <FeaturedHotels/>
             <Food/>
             <PopularHotels/>
+            <Footer/>
         </div>
     )
 }

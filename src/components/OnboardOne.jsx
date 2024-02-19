@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function OnBoardOne() {
     return (
         <div className="bg-FB flex flex-col items-center w-full h-screen pt-16 tab:pt-20">
-            <div className="bg-FB flex flex-col items-center h-487">
+            <div className="bg-FB flex flex-col items-center h-fit">
                 <OnBoardingCard source={source1} title="Satisfy your cravings with" redPart="ease" paragraph=" Integer a viverra sit feugiat leo commodo nunc." />
             </div>
             <ul className='flex items-center w-fit gap-2.5 mt-5'>

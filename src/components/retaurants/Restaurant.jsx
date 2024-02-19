@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { allRestaurants } from "../utils/allRestaurants";
 import { GoDotFill } from "react-icons/go";
 import { BsClockFill } from "react-icons/bs";
@@ -7,17 +7,26 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import { FreeMode } from 'swiper/modules'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SpecialOffer from "./SpecialOffer";
+import { featuredHotels } from "../utils/featuredHotels";
+import Footer from "../Footer"
+import { FaXmark } from "react-icons/fa6";
 
 export default function Restaurant() {
     const { resTitle } = useParams()
-    const restaurant = allRestaurants.filter((res)=> res.title === resTitle)[0]
+    const navigate = useNavigate()
+    const restaurant = allRestaurants.filter((res)=> res.title === resTitle)[0] || featuredHotels.filter((res)=> res.title === resTitle)[0]
+
     const [list, setList] = useState(restaurant.menu[0].menu)
 
+    useEffect(()=>{
+        console.log(restaurant);
+    })
     return (
-        <div className="flex flex-col items-star overflow-y-scroll pb-10">
+        <div className="flex flex-col items-star min-h-screen pb-24">
             <div className="w-full h-64 relative before:content-[''] before:z-20 before:absolute before:w-full before:h-full left-0 top-0 before:bg-50/70">
+                <div className="absolute flex items-center justify-center left-5 h-10 w-10 rounded-full bg-86/50 text-white top-5 z-30" onClick={()=>{navigate(-1)}}><FaXmark/></div>
                 <img src={restaurant.image} alt={restaurant.title} className="w-full h-full" />
             </div>
             <div className="flex flex-col items-start my-7 px-5 w-fit">
@@ -29,7 +38,7 @@ export default function Restaurant() {
                     </div>
                     <p className="text-sm font-semibold text-50">{`${restaurant.review}+ ratings`}</p>
                 </div>
-                <div className="flex items-center gap-2.5">
+                <div className="flex items-center justify-between w-full gap-2.5">
                     <div className="flex items-center gap-2.5">
                         <div className="flex items-center justify-center rounded-full bg-F3D w-8 h-8">
                             <TbBike className="text-txt-red text-base"/>
@@ -101,6 +110,7 @@ export default function Restaurant() {
             </div>
             <SpecialOffer header="Most popular" array={restaurant.popularFood}/>
             <SpecialOffer header="Best dishes" array={restaurant.bestDishes}/>
+            <Footer/>
         </div>
     )
 }

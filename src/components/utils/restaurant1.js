@@ -27,27 +27,35 @@ export const restaurant1Menu = [
         menu : [
             {
                 key: 1,
+                resTitle: "Ocean Bistro",
                 id: 1,
                 title: "Cookie Sandwich",
                 image : appetizer1,
+                price: 100,
             },
             {
                 key: 1,
+                resTitle: "Ocean Bistro",
                 id: 2,
                 title: "Cookie Sandwich",
                 image : appetizer2,
+                price: 100,
             },
             {
                 key: 1,
+                resTitle: "Ocean Bistro",
                 id: 3,
                 title: "Breakfast",
                 image : appetizer3,
+                price: 100,
             },
             {
                 key: 1,
+                resTitle: "Ocean Bistro",
                 id: 4,
                 title: "Breakfast",
                 image : appetizer4,
+                price: 100,
             },
         ]
     },
@@ -58,27 +66,35 @@ export const restaurant1Menu = [
         menu : [
             {   
                 key: 2,
+                resTitle: "Ocean Bistro",
                 id: 1,
                 title: "Soda",
                 image : drinks1,
+                price: 100,
             },
             {   
                 key: 2,
+                resTitle: "Ocean Bistro",
                 id: 2,
                 title: "Soda",
                 image : drinks2,
+                price: 100,
             },
             {   
                 key: 2,
+                resTitle: "Ocean Bistro",
                 id: 3,
                 title: "Coffee",
                 image : drinks3,
+                price: 100,
             },
             {   
                 key: 2,
+                resTitle: "Ocean Bistro",
                 id: 4,
                 title: "Coffee",
                 image : drinks4,
+                price: 100,
             },
         ]
     },
@@ -89,27 +105,35 @@ export const restaurant1Menu = [
         menu : [
             {
                 key: 3,
+                resTitle: "Ocean Bistro",
                 id: 1,
                 title: "Fish",
                 image : seafood1,
+                price: 100,
             },
             {
                 key: 3,
+                resTitle: "Ocean Bistro",
                 id: 2,
                 title: "Shrimp",
                 image : seafood2,
+                price: 100,
             },
             {
                 key: 3,
+                resTitle: "Ocean Bistro",
                 id: 3,
                 title: "Crab",
                 image : seafood3,
+                price: 100,
             },
             {
                 key: 3,
+                resTitle: "Ocean Bistro",
                 id: 4,
                 title: "Fish",
                 image : seafood4,
+                price: 100,
             },
         ]
     },
@@ -120,27 +144,35 @@ export const restaurant1Menu = [
         menu : [
             {
                 key: 4,
+                resTitle: "Ocean Bistro",
                 id: 1,
                 title: "Meatloaf",
                 image : beef1,
+                price: 100,
             },
             {
                 key: 4,
+                resTitle: "Ocean Bistro",
                 id: 2,
                 title: "Beef Hatkora",
                 image : beef2,
+                price: 100,
             },
             {
                 key: 4,
+                resTitle: "Ocean Bistro",
                 id: 3,
                 title: "Beefsteak",
                 image : beef3,
+                price: 100,
             },
             {
                 key: 4,
+                resTitle: "Ocean Bistro",
                 id: 4,
                 title: "Burger",
                 image : beef4,
+                price: 100,
             },
         ]
     },

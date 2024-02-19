@@ -72,6 +72,30 @@ module.exports = {
       inset:{
         '3.5px': '3.5px',
       },
+      keyframes:{
+        search: {
+          '0%, 100%': { width: '0px', height: '0px' },
+          '10%': { width: '55px', height: '55px' },
+          '20%': { width: '110px', height: '110px' },
+          '30%': { width: '165px', height: '165px' },
+          '40%': { width: '220px', height: '220px' },
+          '50%': { width: '275px', height: '275px', color: '#D42323' },
+          '60%': { width: '220px', height: '220px'  },
+          '70%': { width: '165px', height: '165px' },
+          '80%': { width: '110px', height: '110px' },
+          '90%': { width: '55px', height: '55px' },
+          '0%,10%,20%,30%,40%,60%,70%,80%,90%': {color: '#010F07'},
+        },
+        leftRight: {
+          '0%, 50%, 100%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(50px)' },
+          '75%': { transform: 'translateX(-50px)' },
+        },
+      },
+      animation:{
+        search: 'search 4s linear infinite',
+        leftRight: 'leftRight 2s linear infinite',
+      }
     },
   },
   plugins: [],

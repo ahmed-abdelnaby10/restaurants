@@ -7,6 +7,7 @@ import SuccessAlert from "./payments/SuccessAlert";
 import Footer from "./Footer";
 import { removeFromCart } from "../rtk/slices/cart-slice";
 import shoppingCart from "../assests/payment/shoppingcart.png";
+import axios from "axios";
 import { removeFromFoodAmount } from "../rtk/slices/foodAmountSlice";
 
 export default function Orders() {
@@ -20,6 +21,7 @@ export default function Orders() {
       return prev + curr.price * curr.quan;
     }
   }, 0);
+    
   return (
     <>
       <SuccessAlert />
@@ -54,7 +56,6 @@ export default function Orders() {
                   </span>
                   <FaXmark
                     onClick={() => {
-                      dispatch(removeFromCart(prod));
                       dispatch(removeFromFoodAmount(prod));
                     }}
                     className="cursor-pointer"

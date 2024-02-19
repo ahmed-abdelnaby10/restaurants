@@ -1,21 +1,21 @@
-import { allRestaurants } from "../utils/allRestaurants";
 import { BsClockFill } from "react-icons/bs";
-import { FaArrowLeft } from "react-icons/fa";
 import { TbBike } from "react-icons/tb";
 import { Link, useNavigate } from "react-router-dom";
+import { featuredHotels } from "../utils/featuredHotels";
 import Footer from "../Footer"
+import { FaArrowLeft } from "react-icons/fa";
 
-export default function AllRestaurants() {
+export default function FeaturedHotels() {
     const navigate = useNavigate()
     return (
-        <div className="pt-5 pb-24 min-h-screen px-5">  
+        <div className="pt-5 px-5 pb-24 min-h-screen">  
             <div className='text-0D font-semibold text-base flex items-center justify-center relative w-full mb-5'>
                 <button onClick={()=>{navigate(-1)}} className='text-black absolute left-0'><FaArrowLeft/></button>
-                <h2 className=''>Popular Hotels</h2>
+                <h2 className=''>Featured Hotels</h2>
             </div>
             <div className="grid grid-cols-grid-2 gap-x-2.5 gap-y-5">
                 {
-                    allRestaurants.map((res)=>{
+                    featuredHotels.map((res)=>{
                         return(
                             <div key={res.id} className="flex flex-col items-start justify-between gap-5" style={{height:"252px"}}>
                                 <div className="flex flex-col items-center justify-end grow w-full rounded-lg bg-cover bg-center overflow-hidden" style={{backgroundImage:`url(${res.image})`}}>
@@ -37,7 +37,7 @@ export default function AllRestaurants() {
                                 </div>
                                 <div>
                                     <Link preventScrollReset={false} to={`/home/all-restaurants/${res.title}`} className="text-base font-semibold text-black">{res.title}</Link>
-                                    <p className="text-sm text-86 font-semibold">{res.season}</p>
+                                    <p className="text-sm text-86 font-semibold">{res.descr}</p>
                                 </div>
                             </div>
                         )

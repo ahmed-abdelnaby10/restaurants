@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { allRestaurants } from "../utils/allRestaurants";
 import { useEffect, useState } from "react";
 import { topCookie } from "../utils/toppingMenu";
@@ -6,6 +6,8 @@ import { FaAngleRight, FaMinus, FaPlus } from "react-icons/fa";
 import { FaCheck, FaXmark } from "react-icons/fa6";
 import { useDispatch } from "react-redux"
 import { addToCart } from "../../rtk/slices/cart-slice"
+import Footer from "../Footer"
+import { addFoodAmount } from "../../rtk/slices/foodAmountSlice";
 
 export default function ToPPingMenu() {
     const dispatch = useDispatch()
@@ -16,6 +18,7 @@ export default function ToPPingMenu() {
     const [key, setKey] = useState(1)
     const [elementId, setElementId] = useState(1)
     const [element, setElement] = useState({})
+    const navigate = useNavigate()
     let clonedElement = {...element, additions:[], q:quantity}
     useEffect(()=>{
         if (toppingMenu.length === 2) {
@@ -37,10 +40,10 @@ export default function ToPPingMenu() {
         }
     },[elementId, key, restaurant.bestDishes, restaurant.menu, restaurant.popularFood, toppingMenu])
         return (
-        <div className="flex flex-col items-star overflow-y-scroll pb-10">
+        <div className="flex flex-col items-star overflow-y-scroll pb-24">
             <div className="w-full h-64 relative before:content-[''] before:z-20 before:absolute before:w-full before:h-full left-0 top-0 before:bg-50/70">
                 <img src={element.image} alt={element.title} className="w-full h-full" />
-                <Link to={`/home/all-restaurants/${resTitle}`} className="h-10 w-10 absolute left-2.5 text-FB text-xl font-semibold flex items-center justify-center bottom-1/2 rounded-full z-50 bg-D9/20 hover:bg-D9"><FaXmark/></Link>
+                <button onClick={()=>{navigate(-1)}} className="h-10 w-10 absolute left-2.5 text-FB text-xl font-semibold flex items-center justify-center top-2.5 rounded-full z-50 bg-D9/20 hover:bg-D9"><FaXmark/></button>
             </div>
             <h1 className="text-main text-2xl font-semibold px-5 mt-5">{element.title}</h1>
             <p className="text-86 text-base px-5">{element.descr? element.descr : ""}</p>
@@ -121,11 +124,12 @@ export default function ToPPingMenu() {
                     </button>
             </div>
             <button className='bg-txt-red mx-auto w-100 rounded-md text-white flex items-center justify-center h-12 text-sm tracking-widest font-bold hover:bg-txt-red/80 duration-300' onClick={()=>{
-                dispatch(addToCart(clonedElement))
+                dispatch(addFoodAmount(clonedElement))
                 console.log(clonedElement);
             }}>
                     {`ADD TO ORDER (KES ${element.price * quantity})`}
             </button>
+            <Footer/>
         </div>
     )
 }

@@ -10,7 +10,7 @@ export default function Food() {
         <div className='w-full px-5'>
             <div className='w-full flex items-center justify-between mb-2.5'>
                 <h1 className='text-xl font-bold text-main mb-2.5'>Foods</h1>
-                <Link to="" className='text-txt-red text-base font-medium'>See all</Link>
+                <Link to="/home/foods" className='text-txt-red text-base font-medium'>See all</Link>
             </div>
             <Swiper
                 slidesPerView={3}

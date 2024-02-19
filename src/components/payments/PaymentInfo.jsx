@@ -5,18 +5,19 @@ import Cards from './Cards'
 import { FaCheck } from 'react-icons/fa'
 import { useDispatch } from "react-redux"
 import { reversePay } from '../../rtk/slices/payment-slice';
+import Footer from "../Footer"
 
 export default function PaymentInfo() {
     const dispatch = useDispatch()
     const [check, setCheck] = useState(false)
     return (
         <>
-            <div className='text-0D font-semibold text-base flex items-center justify-center relative w-full pt-20 mb-10 px-5'>
+            <div className='text-0D font-semibold text-base flex items-center justify-center relative w-full pt-5 mb-5 px-5'>
                 <Link to="/home/orders/payment/check-method" className='absolute left-5'><FaAngleLeft className="text-xl text-main"/></Link>
                 <h2 className='text-0D font-semibold text-base tracking-wider'>My cards</h2>
             </div>
             <Cards />
-            <div className='flex flex-col items-center mt-7 gap-7 px-5 pb-20'>
+            <div className='flex flex-col items-center mt-7 gap-7 px-5 pb-24'>
                 <Link to="/home/orders" className='text-FB text-sm font-semibold tracking-wider bg-0D w-fit h-fit px-7 py-3 rounded-md' onClick={()=>{dispatch(reversePay(true))}}>Use this card</Link>
                 <p className='text-9F text-sm font-semibold'>OR</p>
                 <form onSubmit={(e)=> e.preventDefault()} className='flex gap-7 flex-col items-start w-full justify-start'>
@@ -42,6 +43,7 @@ export default function PaymentInfo() {
                     <Link to="" className='w-full rounded-md border-2 border-solid border-black text-black flex items-center justify-center h-12 text-base tracking-widest font-bold'>SCAN CARD</Link>
                 </form>
             </div>
+            <Footer/>
         </>
     )
 }

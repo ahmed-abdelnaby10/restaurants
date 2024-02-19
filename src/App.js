@@ -6,10 +6,10 @@ import {Routes, Route} from "react-router-dom"
 import OnBoardOne from './components/OnboardOne.jsx';
 import OnBoardTwo from './components/OnboardTwo.jsx';
 import OnBoardThree from './components/OnBoardThree.jsx';
-import SignInForm from './components/SignInForm.jsx';
+import SignInForm from './components/auth/SignInForm.jsx';
 import CheckPassword from './components/CheckPassword.jsx';
 import CheckEmail from './components/CheckEmail.jsx';
-import SignUpForm from './components/SignUpForm.jsx';
+import SignUpForm from './components/auth/SignUpForm.jsx';
 import EnterPhone from './components/EnterPhone.jsx';
 import VerifyNumber from './components/VerifyNumber.jsx';
 import Location from './components/Location.jsx';
@@ -28,6 +28,8 @@ import ChangePass from './components/account/ChangePass.jsx';
 import LocationDetails from './components/account/LocationDetails.jsx';
 import RateUS from './components/account/RateUS.jsx';
 import Faq from './components/account/Faq.jsx';
+import FeaturedHotels from './components/pages/FeaturedHotels.jsx';
+import Foods from './components/pages/Foods.jsx';
 
 
 function App() {
@@ -56,6 +58,8 @@ function App() {
         <Route path='/sign-in/check-password/check-email' element={<CheckEmail/>}/>
         <Route path='/sign-up/complete-information/location' element={<Location/>}/>
         <Route path='/home' element={<Home/>}/>
+        <Route path='/home/featured-hotels' element={<FeaturedHotels/>}/>
+        <Route path='/home/foods' element={<Foods/>}/>
         <Route path='/home/all-restaurants' element={<AllRestaurants/>}/>
         <Route path='/home/all-restaurants/:resTitle' element={<Restaurant/>}/>
         <Route path='/home/all-restaurants/:resTitle/:toppingMenu' element={<ToPPingMenu/>}/>

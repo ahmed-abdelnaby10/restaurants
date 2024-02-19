@@ -30,6 +30,7 @@ export const allRestaurants = [
         popularFood:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: popular1,
                 title:"Cookie sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -38,6 +39,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: popular2,
                 title:"Combo burger",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -46,6 +48,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: popular3,
                 title:"Combo sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -56,6 +59,7 @@ export const allRestaurants = [
         bestDishes:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: dish1,
                 title:"Canape",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -64,6 +68,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: dish2,
                 title:"Relishes & Crudite",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -72,6 +77,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: dish3,
                 title:"Chips & Dips",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -95,6 +101,7 @@ export const allRestaurants = [
         popularFood:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: popular1,
                 title:"Cookie sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -103,6 +110,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: popular2,
                 title:"Combo burger",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -111,6 +119,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: popular3,
                 title:"Combo sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -121,6 +130,7 @@ export const allRestaurants = [
         bestDishes:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: dish1,
                 title:"Canape",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -129,6 +139,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: dish2,
                 title:"Relishes & Crudite",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -137,6 +148,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: dish3,
                 title:"Chips & Dips",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -160,6 +172,7 @@ export const allRestaurants = [
         popularFood:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: popular1,
                 title:"Cookie sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -168,6 +181,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: popular2,
                 title:"Combo burger",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -176,6 +190,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: popular3,
                 title:"Combo sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -186,6 +201,7 @@ export const allRestaurants = [
         bestDishes:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: dish1,
                 title:"Canape",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -194,6 +210,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: dish2,
                 title:"Relishes & Crudite",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -202,6 +219,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: dish3,
                 title:"Chips & Dips",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -225,6 +243,7 @@ export const allRestaurants = [
         popularFood:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: popular1,
                 title:"Cookie sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -233,6 +252,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: popular2,
                 title:"Combo burger",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -241,6 +261,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: popular3,
                 title:"Combo sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -251,6 +272,7 @@ export const allRestaurants = [
         bestDishes:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: dish1,
                 title:"Canape",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -259,6 +281,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: dish2,
                 title:"Relishes & Crudite",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -267,6 +290,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: dish3,
                 title:"Chips & Dips",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -290,6 +314,7 @@ export const allRestaurants = [
         popularFood:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: popular1,
                 title:"Cookie sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -298,6 +323,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: popular2,
                 title:"Combo burger",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -306,6 +332,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: popular3,
                 title:"Combo sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -316,6 +343,7 @@ export const allRestaurants = [
         bestDishes:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: dish1,
                 title:"Canape",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -324,6 +352,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: dish2,
                 title:"Relishes & Crudite",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -332,6 +361,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: dish3,
                 title:"Chips & Dips",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -355,6 +385,7 @@ export const allRestaurants = [
         popularFood:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: popular1,
                 title:"Cookie sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -363,6 +394,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: popular2,
                 title:"Combo burger",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -371,6 +403,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: popular3,
                 title:"Combo sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -381,6 +414,7 @@ export const allRestaurants = [
         bestDishes:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: dish1,
                 title:"Canape",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -389,6 +423,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: dish2,
                 title:"Relishes & Crudite",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -397,6 +432,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: dish3,
                 title:"Chips & Dips",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -420,6 +456,7 @@ export const allRestaurants = [
         popularFood:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: popular1,
                 title:"Cookie sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -428,6 +465,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: popular2,
                 title:"Combo burger",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -436,6 +474,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: popular3,
                 title:"Combo sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -446,6 +485,7 @@ export const allRestaurants = [
         bestDishes:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: dish1,
                 title:"Canape",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -454,6 +494,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: dish2,
                 title:"Relishes & Crudite",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -462,6 +503,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: dish3,
                 title:"Chips & Dips",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -485,6 +527,7 @@ export const allRestaurants = [
         popularFood:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: popular1,
                 title:"Cookie sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -493,6 +536,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: popular2,
                 title:"Combo burger",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -501,6 +545,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: popular3,
                 title:"Combo sandwich",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -511,6 +556,7 @@ export const allRestaurants = [
         bestDishes:[
             {
                 id:1,
+                resTitle: "67 Authi hotel",
                 image: dish1,
                 title:"Canape",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -519,6 +565,7 @@ export const allRestaurants = [
             },
             {
                 id:2,
+                resTitle: "67 Authi hotel",
                 image: dish2,
                 title:"Relishes & Crudite",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",
@@ -527,6 +574,7 @@ export const allRestaurants = [
             },
             {
                 id:3,
+                resTitle: "67 Authi hotel",
                 image: dish3,
                 title:"Chips & Dips",
                 descr:"Shortbread, chocolate turtle cookies, and red velvet.",

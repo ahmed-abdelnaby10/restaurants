@@ -9,7 +9,6 @@ import { HiOutlineLogout } from "react-icons/hi";
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../Footer"
 import { useDispatch } from "react-redux"
-import { clearUserData } from "../../rtk/slices/userData-slice";
 import Swal from "sweetalert2"
 
 export default function Account() {
@@ -140,7 +139,6 @@ export default function Account() {
                         }).then((result)=>{
                             if (result.isConfirmed) {
                                 navigate("/sign-in")
-                                dispatch(clearUserData())
                             } else {
                                 return false
                             }

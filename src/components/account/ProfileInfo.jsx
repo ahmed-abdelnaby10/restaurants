@@ -3,8 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import Footer from "../Footer"
 import { useState } from 'react'
 import { FaAngleRight } from 'react-icons/fa6'
-import { useSelector, useDispatch } from "react-redux"
-import axios from "axios";
 
 export default function ProfileInfo() {
     const [toggle, setToggle] = useState(0)
@@ -14,29 +12,6 @@ export default function ProfileInfo() {
         setToggle(id)
     }
     const navigate = useNavigate()
-    const dispatch = useDispatch()
-    const userData = useSelector((state)=>state.userData)
-    const handleFormOnSubmit = (e) => {
-        e.preventDefault();
-        axios
-            .put(`${process.env.REACT_APP_SERVER}/auth/users`, {
-                newUsername,
-            })
-            .then((res) => {
-                console.log(res.data);
-                if (res.data.message === "Login Successful") {
-                    const userData = {
-                        email: res.data.email,
-                        userName: res.data.userName,
-                    };
-                    // dispatch(addUser(userData));
-                }
-            })
-            .catch((e) => {
-                console.log(e);
-                console.log(e.response.data.message);
-            });
-        };
     return (
         <div className='bg-FB flex flex-col items-start gap-5 px-5 pt-5 pb-24 min-h-screen'>
             <div className='text-0D font-semibold text-base flex items-center justify-center relative w-full'>
@@ -66,7 +41,7 @@ export default function ProfileInfo() {
                 </li>
                 <li className={`${toggle === 1 ? "flex" : "hidden"} w-full py-3 flex-col`}>
                     <div className="flex items-center justify-between">
-                        <p className="text-86 font-semibold">{userData.userName}</p>
+                        <p className="text-86 font-semibold">user name</p>
                         <button onClick={()=>{
                             setShow(true)
                         }} className="text-txt-red font-semibold">Change</button>
@@ -111,7 +86,7 @@ export default function ProfileInfo() {
                     }}/>
                 </li>
                 <li className={`${toggle === 2 ? "flex" : "hidden"} w-full py-3`}>
-                    <p className="text-86 font-semibold">{userData.email}</p>
+                    <p className="text-86 font-semibold">user email</p>
                 </li>
                 <li className="flex items-center justify-between w-full py-3">
                     <div>

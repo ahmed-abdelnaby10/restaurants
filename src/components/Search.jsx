@@ -3,7 +3,9 @@ import Footer from "./Footer"
 import { useEffect, useState } from 'react';
 import { MdOutlineSearch } from "react-icons/md";
 import { Link } from 'react-router-dom';
-import { useSelector } from "react-redux"
+import { restaurant1Menu } from './utils/restaurant1';
+import { allRestaurants } from './utils/allRestaurants';
+import { featuredHotels } from './utils/featuredHotels';
 
 
 export default function Search() {
@@ -11,7 +13,17 @@ export default function Search() {
     const [search, setSearch] = useState(false)
     const [dropDown, setDropDown] = useState([])
     const [showDropDown, setShowDropDown] = useState(false)
-    const data = useSelector((state)=>state.allFoods)
+    const data = restaurant1Menu.reduce((prev, curr)=>{
+        return prev.concat(curr.menu)
+    },[]) || allRestaurants.reduce((prev, curr)=>{
+        return prev.concat(curr.popularFood)
+    },[]) || allRestaurants.reduce((prev, curr)=>{
+        return prev.concat(curr.bestDishes)
+    },[]) || featuredHotels.reduce((prev, curr)=>{
+        return prev.concat(curr.popularFood)
+    },[]) || featuredHotels.reduce((prev, curr)=>{
+        return prev.concat(curr.bestDishes)
+    },[])
     useEffect(()=>{
         if (inputText === '') {
             setSearch(false)
@@ -44,7 +56,7 @@ export default function Search() {
                         {
                             dropDown.map((food)=>{
                                 return(
-                                    <Link to={`/home/all-restaurants/${food.resTitle}/${food.title}`} key={food.title} className="text-main w-full text-center pt-3 text-base font-semibold">{food.title}</Link>
+                                    <Link to={`/home/all-restaurants/${food.resTitle}/${food.title}`} key={food.price} className="text-main w-full text-center pt-3 text-base font-semibold">{food.title}</Link>
                                 )
                             })
                         }
